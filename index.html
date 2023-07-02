@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="switch-style.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header style="text-align: center; height: 600px; background: #472ca6; color: white;">
+			<br><br><br><br><br><br><br><br>
+			<h1 lang="rus" class="tr">PHP-фреймворк</h1>
+			<h1 lang="eng" class="tr">PHP-famework</h1>
+			<h3 lang="rus" class="tr">by Дмитрий Рудницкий</h3>
+			<h3 lang="eng" class="tr">by Dmitrii Rudnitskii</h3>
+			<br><br>
+			<b lang="rus" class="tr">Быстрое и простое создание интернет-магазина</b>
+			<b lang="eng" class="tr">Quick and easy building of an online store</b>
+			<br><br>
+			<h1>RUS
+			<label class="switch">
+			  <input type="checkbox" checked id="langcheck" onclick="language()">
+			  <span class="slider round"></span>
+			</label>
+			ENG</h1>
+		</header>
+		<div style="text-align: center; height: 200px;">
+			<br><br><br>
+			<h1><a lang="rus" href="manual.htm" class="tr">Документация</a><a lang="eng" href="manual.htm" class="tr">Documentation(rus)</a></h1>
+		</div>
+		<div style="text-align: center; background: #888888;">
+			<br>
+			<h1 lang="rus" class="tr">Примеры использования</h1>
+			<h1 lang="eng" class="tr">Examples</h1>
+			<a href="ex1"><img src="ex1/screen.jpeg"></a>
+			<a href="ex2b"><img src="ex2b/screen.jpeg"></a>
+			<a href="ex3"><img src="ex3/screen.jpeg"></a>
+			<br><br>
+		</div>
+		<div style="text-align: center; height: 200px;">
+			<br><br><br>
+			<h1><a href="framework.zip" lang="rus" class="tr">Скачать zip</a><a href="framework.zip" lang="eng" class="tr">Download zip</a></h1>
+		</div>
+	</body>
+	<script>
+	function language(){
+		let arr = document.getElementsByClassName("tr");
+		
+		let lang = "rus";
+		
+		if(document.getElementById("langcheck").checked){
+			lang = "eng";
+		}
+		
+		Array.prototype.forEach.call(arr, function(a) {
+			a.style.display = "none";
+			if(a.lang == lang)
+				a.style.display = "block";
+		});
+	}
+	
+	language();
+	</script>
+</html>

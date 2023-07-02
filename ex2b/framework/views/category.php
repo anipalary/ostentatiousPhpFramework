@@ -1,0 +1,1 @@
+<a href="?cat=<?=$id?>"><?=$name?></a><br>

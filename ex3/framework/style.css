@@ -1,0 +1,98 @@
+body{
+	font-family: Bahnschrift;
+	text-align: center;
+}
+header{
+	width: 100%;
+	text-align: right;
+	padding: 6px;
+	background: linear-gradient(90deg, rgba(74,74,74,1) 0%, rgba(85,84,0,1) 35%, rgba(132,162,168,1) 100%); 
+	margin-bottom: 20px;
+}
+form input{
+	margin: 3px;
+	padding: 3px;
+	border-radius: 3px;
+	border: 2px solid skyblue;
+}
+header a,
+header b{
+	font-size: 30;
+	text-decoration: none;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+header a:hover{
+	text-decoration: underline;
+}
+details{
+	cursor: pointer;
+}
+.outt{
+	width: 1080px;
+	min-height: 100%;
+	margin: auto;
+}
+.full{
+	width: 100%;
+	height: 100%;
+}
+.tvr{
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	margin: 2px;
+	display: inline-block;
+	
+}
+.tvr:hover{
+	border: 3px solid blue;
+	margin: 0;
+	box-shadow: 0 0 10px black;
+}
+.tvr-img{
+	height: 170px;
+	width: 170px;
+}
+.tvr-name{
+	height: 70px;
+	width: 170px;
+}
+.tvr img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.half-hover{
+	opacity: 1;
+	transition-duration: 300ms;
+}
+.half-hover:hover{
+	opacity: 0.5;
+}
+
+.animunder {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.animunder:hover {
+    background-size: 100% 2px;
+}
+
+.margleft{
+	margin-left: 10px;
+}
+.margright{
+	margin-right: 10px;
+}
+.margtop{
+	margin-top: 10px;
+}
+.margbottom{
+	margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+header{
+	width: auto;
+	display: inline-block;
+	border-radius: 10px;
+	background: linear-gradient(90deg, rgb(251, 62, 62) 0%, rgb(210, 208, 8) 35%, rgb(0, 104, 125) 100%);
+	position: fixed;
+	left: 60%;
+	top: -60px;
+	transition-duration: 0.5s;
+}
+header:hover{
+	top: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
